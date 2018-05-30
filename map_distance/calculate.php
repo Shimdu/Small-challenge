@@ -10,7 +10,6 @@ require('functions.php');
     $start = array($start_x,$start_y);
     $end = array($end_x,$end_y);
     
-    print_r($start);
     echo mapDistance($start,$end);
 //}
 

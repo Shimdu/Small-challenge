@@ -14,7 +14,7 @@ function map(){
 
 //calculate the distance
 function mapDistance($start,$end){
-    $x_y = 0;//0 => x move; 1 y => move;
+    $x_y = 0;//0 => x move; 1 => y move;
     $count = 0;
     $i=0;
     while($start[0]!==$end[0] || $start[1]!==$end[1]){
