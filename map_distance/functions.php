@@ -5,7 +5,7 @@ function map(){
     $map = array();
     
     //The first row
-    echo "<table border=\"1\" width='500' height='500'><tr><td></td>";
+    echo "<table border=\"1\" width='600' height='500'><tr><td></td>";
     for($j=65;$j<79;$j++){
         echo "<td>".strtoupper(chr($j))."</td>";
         if($j==78){echo "</tr>";}
@@ -13,11 +13,11 @@ function map(){
     
     //The table body
     for($i=1;$i<12;$i++){
-        echo "<tr><td width='20px'>".$i."</td>";
+        echo "<tr><td width='6.66%'>".$i."</td>";
         for($j=65;$j<79;$j++){
             $arr = array($i,strtoupper(chr($j)));
             array_push($map,$arr);
-            echo "<td value=\"".$arr[0].", ".$arr[1]."\"> </td>";
+            echo "<td width='6.66%' id=\"".$arr[0].", ".$arr[1]."\"> </td>";
             if($j==78){echo "</tr>";}
         }
     }

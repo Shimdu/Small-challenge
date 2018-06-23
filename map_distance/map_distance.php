@@ -4,6 +4,7 @@ require('calculate.php');
 <html>
     <head>
         <title>Small challenges</title>
+        <link rel='stylesheet' type='text/css' href="style.css">
     </head>
     <body>
         <h1>The shortest distance between two points</h1>
@@ -19,5 +20,6 @@ require('calculate.php');
         </form><br><br>
         <label>Result:</label>
         <input type="text" value="<?php if(isset($result)){echo $result;}?>" disabled>
+        <script src="table.js"></script>
     </body>
 </html>
