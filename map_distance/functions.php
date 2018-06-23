@@ -5,7 +5,7 @@ function map(){
     $map = array();
     
     //The first row
-    echo "<table border=\"1\" width='600' height='500'><tr><td></td>";
+    echo "<table border=\"1\" cellspacing=\"0\" cellpadding=\"4\" width='600' height='500' id='map' onClick=\"colorChange(this)\"><tr><td></td>";
     for($j=65;$j<79;$j++){
         echo "<td>".strtoupper(chr($j))."</td>";
         if($j==78){echo "</tr>";}
