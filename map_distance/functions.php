@@ -31,7 +31,8 @@ function mapDistance($start,$end){
     $i=0;
     while($start[0]!=$end[0] || $start[1]!=$end[1]){
         if($count>=50){
-            die('Stop!');
+            $count = "The number is too big!";
+            return $count;
         }
         if($x_y==0){
             if($start[0]<$end[0]){

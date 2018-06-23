@@ -15,14 +15,16 @@ require('calculate.php');
             <h3>Map:</h3>
             <?php map();?>
             <br>
-            <input type="button" value="Test: Color change" onClick="chgbg('5, G')" />
+            <input type="button" value="Test button: Color change" onClick="chgbg('5, G')">
         </div>
         <div class="input">
             <form action="map_distance.php" method="post">
                 <label>Start:</label>
-                <input type="text" name="start_x" placeholder="x axes"> <input type="text" name="start_y" placeholder="y axes"><br><br>
+                <input type="text" name="start_x" placeholder="x axes" value="<?php if(isset($start_x)){echo $start_x;}?>">
+                <input type="text" name="start_y" placeholder="y axes" value="<?php if(isset($start_y)){echo $start_y;}?>"><br><br>
                 <label>End:</label>
-                <input type="text" name="end_x" placeholder="x axes"> <input type="text" name="end_y" placeholder="y axes"><br><br>
+                <input type="text" name="end_x" placeholder="x axes" value="<?php if(isset($end_x)){echo $end_x;}?>">
+                <input type="text" name="end_y" placeholder="y axes" value="<?php if(isset($end_y)){echo $end_y;}?>"><br><br>
                 <input type="submit" name="submit" value="Submit">
             </form><br><br>
             <label>Result:</label>
