@@ -24,13 +24,15 @@ document.onclick = function(e) {
 };
 */
 
-function chgbg(id){
-	var obj=window.document.getElementById(id);
-	var bg=obj.style.backgroundColor;
-	if(bg=='') {
-        obj.style.backgroundColor='#f00';
-    }else{
-        obj.style.backgroundColor='';
+function chgbg(ids){
+    for(var i=0;i<ids.length;i++){
+        var obj=window.document.getElementById(ids[i]);
+        var bg=obj.style.backgroundColor;
+        if(bg=='') {
+            obj.style.backgroundColor='#f00';
+        }else{
+            obj.style.backgroundColor='';
+        }
     }
 }
 

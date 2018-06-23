@@ -9,8 +9,9 @@ if(isset($_POST['submit'])){
     
     $start = array($start_x,$start_y);
     $end = array($end_x,$end_y);
+    $obstacle = array(array(7,2),array(7,3),array(7,4),array(7,5),array(8,5),array(9,5));
     
-    $result = mapDistance($start,$end);
+    $result = mapDistance($start,$end,$obstacle);
 }
 
 ?>

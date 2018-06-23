@@ -15,7 +15,7 @@ require('calculate.php');
             <h3>Map:</h3>
             <?php map();?>
             <br>
-            <input type="button" value="Test button: Color change" onClick="chgbg('5, G')">
+            <input type="button" value="Test button: Color change" onClick="chgbg(['2, G','3, G','4, G','5, G','5, H','5, I'])">
         </div>
         <div class="input">
             <form action="map_distance.php" method="post">
@@ -28,7 +28,7 @@ require('calculate.php');
                 <input type="submit" name="submit" value="Submit">
             </form><br><br>
             <label>Result:</label>
-            <input type="text" value="<?php if(isset($result)){echo $result;}?>" disabled>
+            <input type="text" value="<?php if(isset($result)){echo $result;}?>" style="width:300px" disabled>
         </div>
     </body>
 </html>
