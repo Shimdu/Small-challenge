@@ -24,6 +24,16 @@ document.onclick = function(e) {
 };
 */
 
+/*
+function colorChange(t) {
+    for (var i=0; i<t.rows.length; i++){
+        for (var j=0; j<t.rows[i].cells.length; j++){
+            t.rows[i].cells[j].className = t.rows[i].cells[j] == event.srcElement ? 'clickTD' : '';
+        }
+    }
+}
+*/
+
 function chgbg(ids){
     for(var i=0;i<ids.length;i++){
         var obj=window.document.getElementById(ids[i]);
@@ -35,11 +45,7 @@ function chgbg(ids){
         }
     }
 }
-
-function colorChange(t) {
-    for (var i=0; i<t.rows.length; i++){
-        for (var j=0; j<t.rows[i].cells.length; j++){
-            t.rows[i].cells[j].className = t.rows[i].cells[j] == event.srcElement ? 'clickTD' : '';
-        }
-    }
+function showPoint(){
+    var x = this;
+    alert(typeof(x));
 }

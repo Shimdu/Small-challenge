@@ -15,6 +15,10 @@ require('calculate.php');
             <h3>Map:</h3>
             <?php map();?>
             <br>
+            <label>Start: </label> <input type="text" id="start" value="" disabled>
+            <label>End: </label> <input type="text" id="end" value="" disabled>
+            <br>
+            <br>
             <input type="button" value="Test button: Color change" onClick="chgbg(['2, G','3, G','4, G','5, G','5, H','5, I'])">
         </div>
         <div class="input">
